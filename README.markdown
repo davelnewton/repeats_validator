@@ -15,8 +15,8 @@ For example, assume a requirement that entries in a sweepstakes only allow three
                           :repeats => {
 	                          :upto => 3,
 	                          :add_methods => true,
-	                          :count_with => lambda { |rec, attr, val| Entry.count(TODO),
-                          }
+	                          :count_with => lambda { |rec, attr, val| Entry.count(TODO) }
+	                      }
     end
 
 Then in a controller, say, we can check for this error specifically, and cleanly.
